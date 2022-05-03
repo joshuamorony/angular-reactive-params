@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngIf="user">
+  <ion-card *ngIf="user$ | async as user">
     <ion-card-header>
       <ion-card-title> {{ user.name }} </ion-card-title>
     </ion-card-header>
